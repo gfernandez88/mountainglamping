@@ -34,12 +34,6 @@ h2 {
   padding: 20px;
   margin: auto; }
 
-.h2__bold {
-  font-family: 'Montserrat', sans-serif;
-  padding-left: 0px;
-  font-size: 16px;
-  font-weight: 800; }
-
 h3 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -144,6 +138,9 @@ section {
   padding-left: 40px;
   width: 500px;
   text-align: justify; }
+
+.encabezado {
+  padding-left: 0px; }
 
 /*--UBICACIÓN-*/
 .mapa {
