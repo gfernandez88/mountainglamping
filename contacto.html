@@ -14,7 +14,7 @@
     <title>Contacto</title>
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white col-12 fixed top pr-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white col-12 fixed-top pr-5">
     <a class="navbar-brand" href="index.html"><img id="animacion" class="logo" src="imagenes/logo.png" alt="mountainglamping"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,14 +47,13 @@
     <main>
       <h1>¿Querés saber más?</h1>
           <p class="contacto__sub">¡Dejános tu consulta y en las próximas 24hs. te responderemos!</p>
-       <section>
+       <section class="row col-12 justify-content-center">
          <div class="contacto">
           <form action="">
-      <!--input-->
              <p><label for="nombre"> Nombre y Apellido:</label>
-             <input type="text" name="nombre" placeholder="Nombre Apellido" /></p>
+             <input class="input" type="text" name="nombre" placeholder="Nombre Apellido" /></p>
              <p><label for="email">E-mail:</label>
-             <input class="input2" type="email" name="email" placeholder="Ej: xxxxx@gmail.com" /></p<br />
+             <input class="input" type="email" name="email" placeholder="Ej: xxxxx@gmail.com" /></p<br />
              <hr />
              <p>Dejanos tu consulta:</p>
              <textarea class=""
@@ -65,7 +64,6 @@
                 placeholder =""
              ></textarea
              ><br />
-      <!--botones-->
              <div id="input">
                <input class="botones" type="reset" value="Reset" />
                <input class="botones" type="submit" value="Enviar" />

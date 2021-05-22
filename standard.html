@@ -14,7 +14,7 @@
     <title>Habitaciones-Standard</title>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white col-12 fixed top pr-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white col-12 fixed-top pr-5">
       <a class="navbar-brand" href="index.html"><img id="animacion" class="logo" src="imagenes/logo.png" alt="mountainglamping"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,10 +47,52 @@
   <main>
     <section>
        <h1> CONOCÉ TU GLAMPING IDEAL</h1>
-        <div class="row col-12 justify-content-center">
-          <div><img class="imgSN" src="imagenes/glamping1.jpg" alt="glamping"></div>
-          <div class="texto"><h2 class="encabezado">STANDARD</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus maxime aliquid. Aliquid qui temporibus nihil, eum itaque sit ab, assumenda quis fugit sunt quae minima laudantium tempore esse! Provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis, eveniet a aliquid laboriosam et ab incidunt nihil. Voluptas debitis assumenda sint culpa velit. Soluta error in ad quaerat porro.</p></div> 
+
+      <div class="row col-12">
+         <div id="carouselExampleCaptions" class="col-6 carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/glamping2.jpg" class="d-block w-100" alt="glamping">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/glamping1.jpg" class="d-block w-100" alt="glamping">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/glamping2.jpg" class="d-block w-100" alt="glamping">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+          <div class="texto"><h2>STANDARD</h2>
+          <p>Estructura de lona con frente transparente con vista al Lago Nahuel Huapi.</p>
+         <ul>
+          <li class=""><img class="icon" src="imagenes/cama.png" alt="Sommier">Sommier king size</li>
+          <li class=""><img class="icon" src="imagenes/deck.png" alt="Deck">Espacio de deck exterior con mesa y bancos</li>
+          <li class=""><img class="icon" src="imagenes/wifi.png" alt="WiFi">WiFi</li>
+          <li class=""><img class="icon" src="imagenes/bañera.png" alt="Baño">Baño privado</li>
+          <li class=""><img class="icon" src="imagenes/blancos.png" alt="Baño">Blancos</li>
+          <li class=""><img class="icon" src="imagenes/coche.png" alt="Cocheras">Cocheras</li>
+        </ul>
+        </div> 
+      </div>
     </section>
   </main> 
  <footer id="grad">

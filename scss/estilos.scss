@@ -1,3 +1,10 @@
+/*VARIABLES y OPERACIONES*/
+
+$blanco: white;
+$gris: #707070;
+$verde: #B5D7D0;
+$font: 100;
+
 .logo {
     padding-left: 20px;
     width: 85px;
@@ -6,23 +13,23 @@
 nav {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: $font*3;
 }
 
 .nav__submenu {
-    font-weight: 300;
+    font-weight: $font+3;
 }
 
 .nav__carrusel {
-    color: white;
+    color: $blanco;
 }
-
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     font-size: 20px;
-    color: #707070;
-    font-weight: 800;
+    color:$gris;
+    font-weight: $font*8;
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
@@ -33,11 +40,10 @@ h1 {
 h2 {
     font-family:'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
-    color: #707070;
+    font-weight: $font*8;
+    color: $gris;
     font-size: 16px;
-    padding: 20px;
-    margin: auto;
+    padding: 50px 0px 20px 0px;
 }
 
 h3 {
@@ -45,7 +51,7 @@ h3 {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
-    color: #707070;
+    color: $gris;
     padding: 20px;
     margin: auto;
 
@@ -54,7 +60,7 @@ h3 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #707070;
+    color: $gris;
     font-weight: 300;
 }
 
@@ -79,9 +85,11 @@ body {
 
 
 main {
-    padding-top: 20px;
+    padding-top: 100px;
     background-color: #F5F5F5;
 }
+
+/*ANIDACIONES FOOTER*/
 
  footer {
     position: absolute;
@@ -89,7 +97,7 @@ main {
     width: 100%;
     padding-top: 5px;
   p {
-    color:white;
+    color: $blanco;
     font-size: 14px;
     padding-left: 5px;
     padding-right: 5px;
@@ -100,16 +108,15 @@ main {
   }
 }
 
-#redes {
-    width: 20px;
-    height: 20px;
-}
-
 .footerRedes {
     display: grid;
     grid-template-columns: 40px 40px 40px;
     justify-content: center;
-    list-style: none;   
+    list-style: none; 
+     img {
+        width: 20px;
+        height: 20px;
+     }  
 }
 
 section {
@@ -163,7 +170,13 @@ section {
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 2px;
-    width: 400px    ;
+    width: 400px;
+}
+
+.imgSN--modifier {
+    @extend .imgSN;
+    width: 100%;
+
 }
 
 .texto{
@@ -175,9 +188,25 @@ section {
     text-align: justify;
 }
 
-.encabezado {
-    padding-left: 0px;
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
+
+li { 
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $gris;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.carousel2 { 
+    max-height: 400px;
+}
+
 /*--UBICACIÓN-*/
 
 .mapa {
@@ -185,14 +214,15 @@ section {
     flex-flow: column nowrap;
     align-content: center;
     text-align: center;
-    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* -- CONTACTO--*/
 
 .contacto {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -212,6 +242,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     border: none;
+    min-width: 600px;
 }
 
 .botones {
@@ -223,24 +254,21 @@ textarea {
     height: 30px;
     border: none;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #input input:hover {
     background-color: #B5D7D0;
 }
 
-input {
+.input {
     border:none;
-    width: 500px;
+    min-width: 500px;
     height: 35px;
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color:#707070;
-}
-
-.input2 {
-    width: 600px;
 }
 
 #check {
