@@ -23,8 +23,8 @@ h1 {
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   padding-bottom: 10px; }
 
 h2 {
@@ -34,6 +34,10 @@ h2 {
   color: #707070;
   font-size: 16px;
   padding: 50px 0px 20px 0px; }
+
+.encabezado {
+  padding-top: 10px;
+  padding-bottom: 5px; }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
@@ -67,8 +71,8 @@ body {
   margin-top: 10px; }
 
 main {
-  padding-top: 100px;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  padding-top: 100px; }
 
 /*ANIDACIONES FOOTER*/
 footer {
@@ -165,29 +169,45 @@ li {
   flex-flow: column nowrap;
   align-content: center;
   text-align: center;
-  margin-left: 30px;
-  margin-right: 30px; }
+  margin: 0px 30px 30px 30px; }
 
 /* -- CONTACTO--*/
 .contacto {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   text-align: center;
+  justify-content: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #707070; }
+  color: #707070;
+  padding-bottom: 30px;
+  margin-bottom: 10px; }
 
 .contacto__sub {
-  text-align: center; }
+  text-align: center;
+  padding: 0px 10px 20px 10px; }
+
+.informacion {
+  padding-bottom: 20px; }
 
 label {
-  margin: 10px; }
+  margin: 10px;
+  min-width: 200px; }
+
+.input {
+  border: none;
+  width: 40%;
+  height: 35px;
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #707070; }
 
 textarea {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   border: none;
-  min-width: 600px; }
+  width: 70%; }
 
 .botones {
   background-color: black;
@@ -202,15 +222,6 @@ textarea {
 
 #input input:hover {
   background-color: #B5D7D0; }
-
-.input {
-  border: none;
-  min-width: 500px;
-  height: 35px;
-  margin: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #707070; }
 
 #check {
   width: 15px;
