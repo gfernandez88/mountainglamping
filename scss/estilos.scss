@@ -1,3 +1,5 @@
+@import "responsive" ;
+
 /*VARIABLES y OPERACIONES*/
 
 $blanco: white;
@@ -44,7 +46,7 @@ h2 {
     font-weight: $font*8;
     color: $gris;
     font-size: 16px;
-    padding: 50px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 .encabezado {
@@ -173,8 +175,8 @@ section {
  /* SOBRE NOSOTROS y HABITACIONES */
  
 .imgSN {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
     border-radius: 2px;
     width: 400px;
 }
@@ -182,16 +184,13 @@ section {
 .imgSN--modifier {
     @extend .imgSN;
     width: 100%;
-
 }
 
 .texto{
-    margin: 50px;
-    margin-top: 0;
-    margin-left: 60px;
-    padding-left: 40px;
+    margin-left: 30px;
+    padding-left: 30px;
     width: 500px;
-    text-align: justify;
+    text-align: none;
 }
 
 .icon {
@@ -248,12 +247,12 @@ li {
 
 label {
     margin:10px;
-    min-width: 200px
+    min-width: 150px
 }
 
 .input {
     border:none;
-    width: 40%;
+    width: 50%;
     height: 35px;
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
