@@ -2,11 +2,9 @@
 /* Habitaciones*/
 @media only screen and (min-width: 768px) {
   .standard {
-    padding-top: 50px;
+    padding: 50px 0px 0px 0px;
     justify-content: center;
-    text-align: none; }
-  .texto {
-    width: 700px; } }
+    text-align: none; } }
 
 @media only screen and (min-width: 375px) {
   .contenedor {
@@ -21,14 +19,45 @@
     margin: 0px;
     padding: 0px; }
   .ul {
-    padding-left: 0px;
-    margin-left: 0px; }
+    padding-left: 10px;
+    margin-left: 10px; }
   .titular {
     padding-left: 2px;
     padding-right: 2px; }
   .texto {
     margin-bottom: 50px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .standard {
+    padding: 40px 10px 0px 3px;
+    justify-content: none;
+    text-align: none; } }
+
+/*---- GRADIENTE-Animación y Transform ---*/
+#grad {
+  background-image: linear-gradient(#9fccbd, #77c9ab); }
+
+#animacion {
+  animation: animacion 1s; }
+
+@keyframes animacion {
+  0% {
+    transform: scale(1); }
+  10% {
+    transform: scale(1.05, 1.05); }
+  20% {
+    transform: scale(1.1, 1.1); }
+  30% {
+    transform: scale(1.15, 1.15); }
+  40% {
+    transform: scale(1.2, 1.2); }
+  60% {
+    transform: scale(1.15, 1.15); }
+  80% {
+    transform: scale(1.1, 1.1); }
+  90% {
+    transform: scale(1.05, 1.05); }
+  100% {
+    transform: scale(1); } }
 
 /*VARIABLES y OPERACIONES*/
 .logo {
@@ -133,33 +162,6 @@ footer {
 section {
   margin-bottom: 20px; }
 
-/*---- GRADIENTE-Animación y Transform ---*/
-#grad {
-  background-image: linear-gradient(#9fccbd, #77c9ab); }
-
-#animacion {
-  animation: animacion 1s; }
-
-@keyframes animacion {
-  0% {
-    transform: scale(1); }
-  10% {
-    transform: scale(1.05, 1.05); }
-  20% {
-    transform: scale(1.1, 1.1); }
-  30% {
-    transform: scale(1.15, 1.15); }
-  40% {
-    transform: scale(1.2, 1.2); }
-  60% {
-    transform: scale(1.15, 1.15); }
-  80% {
-    transform: scale(1.1, 1.1); }
-  90% {
-    transform: scale(1.05, 1.05); }
-  100% {
-    transform: scale(1); } }
-
 /* SOBRE NOSOTROS y HABITACIONES */
 .imgSN, .imgSN--modifier {
   margin-left: 20px;
@@ -171,9 +173,9 @@ section {
   width: 100%; }
 
 .texto {
-  margin-left: 30px;
-  padding-left: 30px;
-  width: 500px;
+  margin-left: 15px;
+  padding-left: 15px;
+  width: 600px;
   text-align: none; }
 
 .icon {
