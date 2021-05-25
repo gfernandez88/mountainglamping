@@ -114,6 +114,12 @@ p {
   color: #707070;
   font-weight: 300; }
 
+.cardstexto {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #707070;
+  font-weight: 300; }
+
 .home {
   display: flex;
   flex-flow: column wrap;

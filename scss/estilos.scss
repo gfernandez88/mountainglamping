@@ -73,6 +73,13 @@ p {
     font-weight: 300;
 }
 
+.cardstexto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: $gris;
+    font-weight: 300;
+}
+
 .home {
     display: flex;
     flex-flow: column wrap;
