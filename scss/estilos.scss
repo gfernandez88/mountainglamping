@@ -47,7 +47,7 @@ h2 {
     font-weight: $font*8;
     color: $gris;
     font-size: 16px;
-    padding: 10px 0px 20px 0px;
+    padding: 5px 0px 20px 0px;
 }
 
 .encabezado {
@@ -141,18 +141,6 @@ section {
 
  /* SOBRE NOSOTROS y HABITACIONES */
  
-.imgSN {
-    margin-left: 20px;
-    margin-right: 10px;
-    border-radius: 2px;
-    width: 400px;
-}
-
-.imgSN--modifier {
-    @extend .imgSN;
-    width: 100%;
-}
-
 .texto{
     margin-left: 15px;
     padding-left: 15px;
@@ -166,7 +154,7 @@ section {
     margin-right: 10px;
 }
 
-li { 
+.assets { 
     list-style: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
